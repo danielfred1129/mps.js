@@ -51,7 +51,7 @@ function app(window) {
 // return null (hedera-micropayment is not present because this website does not implement hedera-micropayment)
 function checkForExtension(configurations) {
     if (!isChrome()) {
-        redirectToError('isnotChrome');
+        redirectToError('/isnotChrome');
     } else {
         let tags = configurations;
         // if tags.amount is null or undefined, we should assume that this is a free page and do nothing more

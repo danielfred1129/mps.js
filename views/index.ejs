@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Hashing Systems Development Service</title>
+  <meta charSet="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Efficient, Secure and Scalable access to the Hashgraph Platform">
+  <meta property="og:image" content="Logo.png">
+  <link rel="shortcut icon" href=""/>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/main.css">
+  <link rel="stylesheet" href="stylesheets/color.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/themes/prism.min.css"
+  />
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-136323047-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-136323047-1');
+  </script>
+
+  <style>.custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c {
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      background-color: #393E41;
+    }
+
+    .custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c .primary-color {
+      color: #FFFFFF
+    }
+
+    .custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c .secondary-color {
+      color: #FFFFFF
+    }
+
+    .custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c .accent-bg {
+      background-color: #35BAC1
+    }
+
+    .custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c .secondary-bg {
+      background-color: #3AD2AD
+    }
+
+    .custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c .svg-fill {
+      fill: #FFFFFF
+    }
+
+    .herro {
+      text-align: left;
+      margin-top: -60px;
+      left: 15vw;
+      position: relative;
+    }
+
+    .hero-spicy > canvas {
+      position: relative;
+      z-index: 1000;
+    }
+
+    .hero-spicy {
+      width: 400px;
+    }
+
+    @media (min-width: 900px) {
+      .hero-spicy {
+        left: 15vw;
+        position: relative;
+      }
+    }
+
+    a.logo {
+      font-size: 0.8em;
+    }
+
+    .section.first {
+      padding: 0px;
+      padding-bottom: 50px;
+    }
+
+    section.cd-intro {
+      margin-top: 0px !important;
+      margin-bottom: 40px;
+      margin: 0px !important
+    }
+
+    h1.herro {
+      font-size: 72px;
+      background: -webkit-linear-gradient(#eee, #333);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: #eeeeee61;
+    }
+
+    @media (max-width: 600px) {
+      h1.herro {
+        font-size: 42px;
+      }
+    }
+
+    .section {
+      padding: 25px 0;
+      overflow: hidden;
+      position: relative;
+    }
+  </style>
+</head>
+
+<body class="font-modern">
+<script id="shader-fs" type="x-shader/x-fragment">
+        #ifdef GL_ES
+                  precision highp float;
+                  #endif
+            void main(void) {
+             gl_FragColor = vec4(0.2, 0.3, 0.4, 1.0);
+            }
+
+
+
+
+
+
+
+
+</script>
+<script id="shader-vs" type="x-shader/x-vertex">
+    attribute vec3 vertexPosition;
+    uniform mat4 modelViewMatrix;
+    uniform mat4 perspectiveMatrix;
+    void main(void) {
+        gl_Position = perspectiveMatrix * modelViewMatrix * vec4(  vertexPosition, 1.0);
+    }
+
+
+
+
+
+
+
+
+</script>
+<div class="custom-color-071c0d9d-2811-bdca-b906-1a0a3699242c">
+  <header class="header">
+    <div id="messagediv"></div>
+    <div class="container-lrg">
+      <div class="flex col-12 spread"><a class="logo primary-color logo__white" href="https://hashingsystems.com">&lt;
+          Back to Homepage</a></div>
+      <!-- <div class="flex col-12 spread" style="float: right"><a class="logo primary-color logo__white"
+                                                               href="https://api.hashingsystems.com/docs.html">
+           View Docs &gt;</a></div>-->
+    </div>
+
+  </header>
+  <section class="section first">
+    <div id="stars">
+    </div>
+    <div id="stars2">
+    </div>
+    <div id="stars3">
+    </div>
+    <div class="container mb40">
+      <div class="text-center">
+        <section class="cd-intro">
+          <div class="hero-spicy">
+            <canvas id="c"></canvas>
+          </div>
+          <h1 class="cd-headline letters type heading-lrg primary-color herro">
+                            <span class="cd-words-wrapper">
+                                <b class="is-hidden">Efficient</b>
+                                <b class="is-visible">Secure</b>
+                                <b>Scalable</b>
+                            </span>
+            <br>
+            <span>Hashgraph <br> Infrastructure</span>
+          </h1>
+        </section>
+        <h2 class="subheading secondary-color mt20">Welcome to the Hashing Systems Gateway! We facilitate access
+          to the Hedera Hashgraph Platform.</h2>
+      </div>
+    </div>
+  </section>
+</div>
+<section id="feature-4" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+  <div class="container-lrg flex">
+    <div class="col-6 flex center-horizontal center-vertical">
+      <div class="launchaco-builder-hoverable">
+        <div class=""><img src="https://cdn.launchaco.com/images/77f4a56c-0a1c-4a50-bd2c-0f8d10832b37.png"
+                           alt="Screenshot of small App" class="custom-img"></div>
+      </div>
+    </div>
+    <div class="flex col-6 flex-column mobile-text-center center-vertical">
+      <!---->
+      <h3 class="bold primary-color launchaco-builder-hoverable">Universal Infrastructure</h3>
+      <p class="paragraph secondary-color launchaco-builder-hoverable">Our toolset provides an gateway to connect
+        with the Hedera Hashgraph platform. It eliminates the need to install, configure and maintain your own
+        SDKs/node.</p>
+    </div>
+  </div>
+</section>
+<section id="feature-5" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+  <div class="container-lrg flex">
+    <div class="flex col-6 flex-column mobile-text-center center-vertical">
+      <!---->
+      <h3 class="bold primary-color launchaco-builder-hoverable">Consolidated Gateway</h3>
+      <p class="paragraph secondary-color launchaco-builder-hoverable">We provide a set of protocols and tools for
+        building dapp solutions. We make it easier to access all the functionality under a simple to use
+        workspace.</p>
+    </div>
+    <div class="col-6 flex center-horizontal center-vertical">
+      <div class="launchaco-builder-hoverable">
+        <div class=""><img src="https://cdn.launchaco.com/images/6e63ca2e-fb7f-4495-99af-bf8fc3eacd92.png"
+                           alt="Screenshot of small App" class="custom-img"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="feature-6" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+  <div class="container-lrg flex">
+    <div class="flex col-12 mobile-text-center center-vertical" style="display: block;">
+      <!---->
+      <h3 class="bold primary-color launchaco-builder-hoverable" style=" display: block;width: 100%;">How to use</h3>
+      <p class="paragraph secondary-color launchaco-builder-hoverable">Click the button below to copy the embeded code and place it inside your script tag. </p>
+      <div class="col-12 center-horizontal center-vertical">
+        <div class="launchaco-builder-hoverable">
+          <div class="">
+            <a href="quick-test">Test now</a>
+            <pre class=" language-js" style="height: 100px; padding: 2px;">
+                       <code id="code-snippet" class=" language-js">
+                              (function (_h, a, s, h, g, ra, ph) {
+                                _h['MPS-JS'] = h;
+                                _h[h] = _h[h] || function () {
+                                    (_h[h].q = _h[h].q || []).push(arguments)
+                                };
+                                ra = a.createElement(s),
+                                    ph = a.getElementsByTagName(s)[0];
+                                ra.id = h;
+                                ra.src = g;
+                                ra.async = 1;
+                                console.log(ra);
+                                console.log(ph);
+                                ph.parentNode.insertBefore(ra, ph);
+                            }(window, document, 'script', 'mw', 'https://api.hashingsystems.com/javascripts/widget.js'));
+
+                            mw('init',
+                                {
+                                    submissionnode: "0.0.11",
+                                    recipientlist: '[{ "to": "0.0.99", "tinybars": "4666667" }]',
+                                    contentid: '79',
+                                    type: 'article',
+                                    memo: '1275,79',
+                                    attrID: 'feature-4',
+                                }
+                            );
+                    </code>
+                    </pre>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button style="width:100%;height: 50px;color: blue;" onclick="testcpy()" data-code="">Copy Embeded Code</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="cta-1" class="section gray-white" sitemeta="[object Object]" activepage="Landing">
+  <div class="container text-center">
+    <div class="col-12">
+      <h4 class="heading primary-color">Register below to get early access to our APIs!</h4>
+      <p class="paragraph mt20 secondary-color">Our team will reach out to you as soon as possible.</p>
+      <div class="mt40">
+        <form action="https://awesomeblockchain.us16.list-manage.com/subscribe/post?u=8c24cca329b8f457a655ed73e&amp;amp;id=6b7f43c4a5"
+              method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
+              novalidate="novalidate" class="container-sml mailchimp flex mb20">
+          <input type="email" value=""
+                 name="EMAIL"
+                 id="mce-EMAIL"
+                 placeholder="Your Email Address"
+                 required="required"
+                 class="mailchimp-input mobile-text-center">
+          <div aria-hidden="true" style="position: absolute; left: -5000px;">
+            <input type="text"
+                   name="b_3198ee66c8baf4d60aa2fee6b_d60e1830e8"
+                   tabindex="-1" value="">
+          </div>
+          <input type="submit" name="subscribe" id="mc-embedded-subscribe"
+                 class="white-color button no-max-width accent-bg primary-color" value="Subscribe">
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<footer id="footer-2" class="section text-center gray-white" sitemeta="[object Object]" activepage="Landing">
+  <div class="container col-12">
+    <div><a href="https://twitter.com/hashingsystems" target="_blank" class="socialicons accent-bg twitter"></a><a
+              href="https://facebook.com/hashingsystems" target="_blank" class="socialicons accent-bg facebook"></a><a
+              href="mailto:pablo@hashingsystems.com" class="socialicons accent-bg email"></a><a
+              href="https://medium.com/hashingsystems" target="_blank" class="socialicons accent-bg medium"></a><a
+              href="https://github.com/hashingsystems" target="_blank" class="socialicons accent-bg github"></a></div>
+  </div>
+</footer>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.5.0/prism.min.js"></script>
+<script src="javascripts/main.js"></script>
+<script src="javascripts/index.js"></script>
+<script src="javascripts/extras.js"></script>
+</html>
