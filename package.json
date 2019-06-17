@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "build:development": "./node_modules/.bin/webpack --config webpack.config.js",
     "build-release": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
     "staging": "./node_modules/.bin/webpack-dev-server --open",
     "start": "node ./bin/www",
