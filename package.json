@@ -1,5 +1,7 @@
 {
     "name": "js-widget",
+    "version": "0.0.1",
+    "main": "src/index.js",
     "scripts": {
         "build": "./node_modules/.bin/webpack --config webpack.config.js",
         "build-release": "./node_modules/.bin/webpack --config webpack.config.js --env.prod",
